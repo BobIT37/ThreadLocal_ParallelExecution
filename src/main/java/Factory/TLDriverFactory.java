@@ -8,6 +8,12 @@ import UtilPackage.OptionsManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+/**
+ * 
+ * @author ilhanturkmen
+ *
+ */
+
 public class TLDriverFactory {
 	
 	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<WebDriver>();
