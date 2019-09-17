@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Thread Local Test Sanity Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Google Test" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="MyTest.GoogleTest">
+        <methods>
+          <include name="googleTitleTest_1"/>
+          <include name="googleTitleTest_2"/>
+          <include name="googleTitleTest_3"/>
+          <include name="googleTitleTest_4"/>
+        </methods>
+      </class> <!-- MyTest.GoogleTest -->
+    </classes>
+  </test> <!-- Google Test -->
+  <test thread-count="4" name="Facebook Test" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="MyTest.FacebookTest">
+        <methods>
+          <include name="facebookTitleTest_1"/>
+          <include name="facebookTitleTest_2"/>
+        </methods>
+      </class> <!-- MyTest.FacebookTest -->
+    </classes>
+  </test> <!-- Facebook Test -->
+</suite> <!-- Failed suite [Thread Local Test Sanity Suite] -->

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Thread_Local_Test_Sanity_Suite">
+              <span class="suite-name border-passed">Thread Local Test Sanity Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Thread_Local_Test_Sanity_Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Thread_Local_Test_Sanity_Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Thread_Local_Test_Sanity_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Thread_Local_Test_Sanity_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Thread_Local_Test_Sanity_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Thread_Local_Test_Sanity_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Thread_Local_Test_Sanity_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Thread_Local_Test_Sanity_Suite" class="hide-methods passed suite-Thread_Local_Test_Sanity_Suite"> (hide)</a> <!-- hide-methods passed suite-Thread_Local_Test_Sanity_Suite -->
+                      <a href="#" panel-name="suite-Thread_Local_Test_Sanity_Suite" class="show-methods passed suite-Thread_Local_Test_Sanity_Suite"> (show)</a> <!-- show-methods passed suite-Thread_Local_Test_Sanity_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Thread_Local_Test_Sanity_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Thread_Local_Test_Sanity_Suite" title="MyTest.FacebookTest" hash-for-method="facebookTitleTest_1">facebookTitleTest_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Thread_Local_Test_Sanity_Suite" title="MyTest.FacebookTest" hash-for-method="facebookTitleTest_2">facebookTitleTest_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Thread_Local_Test_Sanity_Suite" title="MyTest.GoogleTest" hash-for-method="googleTitleTest_1">googleTitleTest_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Thread_Local_Test_Sanity_Suite" title="MyTest.GoogleTest" hash-for-method="googleTitleTest_2">googleTitleTest_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Thread_Local_Test_Sanity_Suite" title="MyTest.GoogleTest" hash-for-method="googleTitleTest_3">googleTitleTest_3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Thread_Local_Test_Sanity_Suite" title="MyTest.GoogleTest" hash-for-method="googleTitleTest_4">googleTitleTest_4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Thread_Local_Test_Sanity_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Thread_Local_Test_Sanity_Suite" class="panel Thread_Local_Test_Sanity_Suite">
+          <div class="suite-Thread_Local_Test_Sanity_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MyTest.FacebookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="facebookTitleTest_1">
+                  </a> <!-- facebookTitleTest_1 -->
+                  <span class="method-name">facebookTitleTest_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="facebookTitleTest_2">
+                  </a> <!-- facebookTitleTest_2 -->
+                  <span class="method-name">facebookTitleTest_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Thread_Local_Test_Sanity_Suite-class-passed -->
+          <div class="suite-Thread_Local_Test_Sanity_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MyTest.GoogleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleTitleTest_1">
+                  </a> <!-- googleTitleTest_1 -->
+                  <span class="method-name">googleTitleTest_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleTitleTest_2">
+                  </a> <!-- googleTitleTest_2 -->
+                  <span class="method-name">googleTitleTest_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleTitleTest_3">
+                  </a> <!-- googleTitleTest_3 -->
+                  <span class="method-name">googleTitleTest_3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleTitleTest_4">
+                  </a> <!-- googleTitleTest_4 -->
+                  <span class="method-name">googleTitleTest_4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Thread_Local_Test_Sanity_Suite-class-passed -->
+        </div> <!-- panel Thread_Local_Test_Sanity_Suite -->
+        <div panel-name="test-xml-Thread_Local_Test_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/ilhanturkmen/Documents/workspace/ThreadLocal/src/test/resources/TestRunner/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot; name=&quot;Thread Local Test Sanity Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Google Test&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;MyTest.GoogleTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;googleTitleTest_1&quot;/&gt;
+          &lt;include name=&quot;googleTitleTest_2&quot;/&gt;
+          &lt;include name=&quot;googleTitleTest_3&quot;/&gt;
+          &lt;include name=&quot;googleTitleTest_4&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- MyTest.GoogleTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Google Test --&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;Facebook Test&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;MyTest.FacebookTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;facebookTitleTest_1&quot;/&gt;
+          &lt;include name=&quot;facebookTitleTest_2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- MyTest.FacebookTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Facebook Test --&gt;
+&lt;/suite&gt; &lt;!-- Thread Local Test Sanity Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Thread_Local_Test_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Thread Local Test Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Google Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Facebook Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Thread_Local_Test_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Thread Local Test Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Thread_Local_Test_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Thread Local Test Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Thread_Local_Test_Sanity_Suite');
+function tableData_Thread_Local_Test_Sanity_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'googleTitleTest_3')
+data.setCell(0, 2, 'MyTest.GoogleTest')
+data.setCell(0, 3, 20500);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'googleTitleTest_2')
+data.setCell(1, 2, 'MyTest.GoogleTest')
+data.setCell(1, 3, 19566);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'facebookTitleTest_1')
+data.setCell(2, 2, 'MyTest.FacebookTest')
+data.setCell(2, 3, 17161);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'googleTitleTest_4')
+data.setCell(3, 2, 'MyTest.GoogleTest')
+data.setCell(3, 3, 16215);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'facebookTitleTest_2')
+data.setCell(4, 2, 'MyTest.FacebookTest')
+data.setCell(4, 3, 15687);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'googleTitleTest_1')
+data.setCell(5, 2, 'MyTest.GoogleTest')
+data.setCell(5, 3, 1140);
+window.suiteTableData['Thread_Local_Test_Sanity_Suite']= { tableData: data, tableDiv: 'times-div-Thread_Local_Test_Sanity_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Thread_Local_Test_Sanity_Suite">
+              </div> <!-- times-div-Thread_Local_Test_Sanity_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Thread_Local_Test_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Thread Local Test Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Thread_Local_Test_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Thread_Local_Test_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">googleTitleTest_3</span>
+                <span class="method-start">1573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">googleTitleTest_2</span>
+                <span class="method-start">2507 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">facebookTitleTest_1</span>
+                <span class="method-start">4914 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">googleTitleTest_4</span>
+                <span class="method-start">5859 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">facebookTitleTest_2</span>
+                <span class="method-start">8222 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">googleTitleTest_1</span>
+                <span class="method-start">22065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22074 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22075 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22075 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23206 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23910 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
