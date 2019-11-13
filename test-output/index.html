@@ -203,7 +203,7 @@
         </div> <!-- panel Thread_Local_Test_Sanity_Suite -->
         <div panel-name="test-xml-Thread_Local_Test_Sanity_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/ilhanturkmen/Documents/workspace/ThreadLocal/src/test/resources/TestRunner/testng.xml</span>
+            <span class="header-content">/Users/BobIT/Documents/workspace/ThreadLocal/src/test/resources/TestRunner/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -276,29 +276,29 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'googleTitleTest_3')
+data.setCell(0, 1, 'googleTitleTest_1')
 data.setCell(0, 2, 'MyTest.GoogleTest')
-data.setCell(0, 3, 20500);
+data.setCell(0, 3, 23571);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'googleTitleTest_2')
-data.setCell(1, 2, 'MyTest.GoogleTest')
-data.setCell(1, 3, 19566);
+data.setCell(1, 1, 'facebookTitleTest_2')
+data.setCell(1, 2, 'MyTest.FacebookTest')
+data.setCell(1, 3, 11628);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'facebookTitleTest_1')
-data.setCell(2, 2, 'MyTest.FacebookTest')
-data.setCell(2, 3, 17161);
+data.setCell(2, 1, 'googleTitleTest_2')
+data.setCell(2, 2, 'MyTest.GoogleTest')
+data.setCell(2, 3, 10412);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'googleTitleTest_4')
-data.setCell(3, 2, 'MyTest.GoogleTest')
-data.setCell(3, 3, 16215);
+data.setCell(3, 1, 'facebookTitleTest_1')
+data.setCell(3, 2, 'MyTest.FacebookTest')
+data.setCell(3, 3, 7899);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'facebookTitleTest_2')
-data.setCell(4, 2, 'MyTest.FacebookTest')
-data.setCell(4, 3, 15687);
+data.setCell(4, 1, 'googleTitleTest_3')
+data.setCell(4, 2, 'MyTest.GoogleTest')
+data.setCell(4, 3, 7847);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'googleTitleTest_1')
+data.setCell(5, 1, 'googleTitleTest_4')
 data.setCell(5, 2, 'MyTest.GoogleTest')
-data.setCell(5, 3, 1140);
+data.setCell(5, 3, 1049);
 window.suiteTableData['Thread_Local_Test_Sanity_Suite']= { tableData: data, tableDiv: 'times-div-Thread_Local_Test_Sanity_Suite'}
 return data;
 }
@@ -329,7 +329,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -348,92 +359,81 @@ return data;
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">googleTitleTest_3</span>
-                <span class="method-start">1573 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">googleTitleTest_2</span>
-                <span class="method-start">2507 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">facebookTitleTest_1</span>
-                <span class="method-start">4914 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">googleTitleTest_4</span>
-                <span class="method-start">5859 ms</span>
+                <span class="method-name">googleTitleTest_1</span>
+                <span class="method-start">1815 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">facebookTitleTest_2</span>
-                <span class="method-start">8222 ms</span>
+                <span class="method-start">13801 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">googleTitleTest_1</span>
-                <span class="method-start">22065 ms</span>
+                <span class="method-name">googleTitleTest_2</span>
+                <span class="method-start">14940 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22074 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22075 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22075 ms</span>
-              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">facebookTitleTest_1</span>
+                <span class="method-start">17453 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">googleTitleTest_3</span>
+                <span class="method-start">18508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">googleTitleTest_4</span>
+                <span class="method-start">25342 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22075 ms</span>
+                <span class="method-start">25353 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23206 ms</span>
+                <span class="method-start">25353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25387 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MyTest.FacebookTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23910 ms</span>
+                <span class="method-start">25430 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MyTest.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26356 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26391 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

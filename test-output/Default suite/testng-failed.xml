@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="MyTest.FacebookTest">
+        <methods>
+          <include name="facebookTitleTest_1"/>
+        </methods>
+      </class> <!-- MyTest.FacebookTest -->
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="MyTest.FacebookTest">
+        <methods>
+          <include name="facebookTitleTest_1"/>
+        </methods>
+      </class> <!-- MyTest.FacebookTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
